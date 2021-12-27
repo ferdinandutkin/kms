@@ -1,0 +1,14 @@
+span.hover-img {
+    position:relative;
+    color: rgba(238, 238, 0, 1);
+    text-decoration: underline dotted;
+}
+
+
+span.hover-img span {
+    position:absolute; left:-9999px; top:-9999px; z-index:4;
+}
+span.hover-img.click span {
+    top: 20px;
+    left:0;
+}

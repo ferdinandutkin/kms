@@ -1,0 +1,41 @@
+#full-img-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+#gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#gallery > img {
+    border: 2px solid black;
+    width: 20%;
+    height: 20%;
+    margin: 2%;
+}
+
+#full-img {
+    max-height: min(40vh, 40vw);
+}
+
+#gallery > img.clicked {
+    border: 2px solid yellow;
+
+}
+
+
+.iframe-container {
+    overflow: hidden;
+    padding-top: 56.25%; /*16:9 -> 9/16 -> 0.5625*/
+    position: relative;
+}
+.iframe-container iframe {
+    border: 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
